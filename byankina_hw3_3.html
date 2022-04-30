@@ -1,0 +1,33 @@
+<!--
+Перед вами находится массив с продуктами, сегодня распродажа и вам нужно на каждый товар применить скидку 15%, 
+можете использовать метод forEach
+-->
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <title>Home work 3.1</title>
+   </head>
+   <body>
+	<script>
+	    const products = [ 
+			{ 
+				id: 3, 
+				price: 200, 
+			}, 
+			{ 	
+				id: 4, 
+				price: 900, 
+			}, 
+			{ 	
+				id: 1, 
+				price: 1000, 
+			}, 
+		];
+		
+		products.forEach(function(item, i, arr) {
+			console.log(`Товар ${item.id}: цена со скидкой 15% составляет ${item.price * 0.85}`);
+		})
+	</script>
+   </body>
+</html>

@@ -1,0 +1,41 @@
+<!--
+Выведите в консоль значения, указанные рядом с комментариями:
+-->
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <title>Home work 3.1</title>
+   </head>
+   <body>
+	<script>
+		const post = 
+		{ 
+			author: "John", // вывести
+            postId: 23, 
+			comments: [ 
+				{ 
+					userId: 10, 
+					userName: "Alex", 
+					text: "lorem ipsum", 
+					rating: { 
+						likes: 10, 
+						dislikes: 2 // вывести
+					} 
+				}, 
+				{ 
+					userId: 5, // вывести
+ 					userName: "Jane", 
+					text: "lorem ipsum 2", //вывести этот текст 
+					rating: { 
+						likes: 3, 
+						dislikes: 1 
+						} 
+				}, 
+			] 
+		};
+		
+		console.log(`${post.author}: dislikes: ${post.comments[0].rating.dislikes}, userId: ${post.comments[1].UserId}, text: ${post.comments[1].text}` )
+	</script>
+   </body>
+</html>
